@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "name": "The Belt",
+      "price": "9.50",
+      "oldPrice": "20.00$",
+      "imgUrl": "./assets/img/product_3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "The Belt",
+      "price": "9.50",
+      "imgUrl": "./assets/img/product_1.jpg"
+    },
+    {
+      "id": "5",
+      "name": "The Belt",
+      "price": "9.50",
+      "oldPrice": "20.00$",
+      "imgUrl": "./assets/img/product_2.jpg"
+    },
+    {
+      "id": "6",
+      "name": "The Belt",
+      "price": "9.50",
+      "imgUrl": "./assets/img/product_2.jpg"
+    },
+    {
+      "id": "6d12",
+      "name": "Beatae ducimus libe",
+      "price": "18",
+      "imgUrl": "./assets/img/product_2.jpg"
+    },
+    {
+      "id": "d282",
+      "name": "Sunt omnis qui vero ",
+      "price": "92",
+      "imgUrl": "./assets/img/product_3.jpg"
+    },
+    {
+      "id": "7d9e",
+      "name": "Est sint et do ipsu",
+      "price": "87",
+      "imgUrl": "./assets/img/product_3.jpg"
+    },
+    {
+      "id": "b6d0",
+      "name": "Facere voluptates de",
+      "price": "33",
+      "imgUrl": "./assets/img/product_3.jpg"
+    },
+    {
+      "id": "17c4",
+      "name": "Est blanditiis archi",
+      "price": "47",
+      "imgUrl": "./assets/img/product_3.jpg"
+    }
+  ]
+}

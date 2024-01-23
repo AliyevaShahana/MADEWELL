@@ -1,0 +1,237 @@
+@import "./button";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    padding: 0 5%;
+  }
+}
+header {
+  position: absolute;
+  width: 100%;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    .res-nav {
+      i {
+        display: none;
+        @media screen and (max-width: 1200px) {
+          display: block;
+          
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+    nav {
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+      ul {
+        display: flex;
+        gap: 2rem;
+        li {
+          a {
+            font-size: 15px;
+            color: #25262a;
+          }
+        }
+      }
+    }
+    .icons {
+      display: flex;
+      gap: 1rem;
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+      .favs-count,
+      .basket-count {
+        padding: 7px;
+        background-color: rgb(32, 125, 255);
+        color: white;
+        font-size: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+aside {
+  display: none;
+  // @media screen and (max-width:1200px) {
+  // display: block;
+  // }
+  &.show {
+    @media screen and (max-width: 1200px) {
+      display: block;
+    }
+  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 15rem;
+  padding: 2rem;
+  height: 100%;
+  .res-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    ul {
+      li {
+        margin-bottom: 1rem;
+        a {
+          font-size: 15px;
+          color: #25262a;
+        }
+      }
+    }
+  }
+}
+#header-photo {
+  .header-photo {
+    display: flex;
+    // @media screen and (max-width:1200px){
+    //   flex-direction: column;
+    // }
+    .img-div {
+      width: 60%;
+      //   img {
+      // width: 100%;
+      background-image: url("../img/person_transparent.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      // height: 100vh;
+      //   }
+    }
+    .content {
+      width: 50%;
+      padding: 17rem 0;
+
+      .btn {
+        button {
+          @extend %primary-btn;
+        }
+        .shop {
+          @extend %primary-btn;
+          background-color: white;
+          color: rgb(32, 125, 255);
+        }
+      }
+    }
+  }
+}
+
+#dinamic {
+  .products {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+
+    .card {
+      position: relative;
+      text-align: center;
+      width: 80%;
+      //   border: 1px solid;
+
+      .icons {
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+        i {
+          margin-left: 1rem;
+          font-size: 20px;
+        }
+      }
+      .content {
+        position: absolute;
+        bottom: 3rem;
+        left: 5rem;
+        h5 {
+          margin: 1rem;
+          opacity: 0.7;
+        }
+        .price {
+          display: flex;
+          gap: 2rem;
+          justify-content: center;
+
+          .old-price {
+            opacity: 0.7;
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      .img-div {
+        transition: all 0.3s;
+        &:hover {
+          transform: scale(0.8);
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#form {
+  padding: 10rem;
+  text-align: center;
+  h1 {
+    margin-bottom: 3rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    input {
+      padding: 1rem;
+      width: 40%;
+      border: 1px solid;
+    }
+    button {
+      @extend %primary-btn;
+    }
+  }
+}
+
+#table {
+  display: flex;
+  justify-content: center;
+  table,
+  th,
+  td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 3rem;
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}

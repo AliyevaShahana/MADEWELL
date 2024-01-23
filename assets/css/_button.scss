@@ -1,0 +1,10 @@
+%primary-btn{
+    padding: 0.8rem  2rem;
+    background-color: rgb(32,125,255);
+    border: 1px solid rgb(32,125,255);
+    color: white;
+    &:hover{
+        background-color: white;
+        color: rgb(32,125,255);
+    }
+}
