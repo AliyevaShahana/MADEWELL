@@ -8,3 +8,13 @@
         color: rgb(32,125,255);
     }
 }
+
+%second-btn{
+    padding: 0.7rem 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+    &:hover{
+        opacity: 0.8;
+    }
+}

@@ -11,6 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -19,6 +28,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    ></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
@@ -65,7 +82,6 @@
         </ul>
       </nav>
     </aside>
-    <!-- <h3 class="old-price">${element?.old-price} $</h3> -->
     <div id="header-photo">
       <div class="container">
         <div class="header-photo">
@@ -108,5 +124,144 @@
         </div>
       </div>
     </div>
+
+    <section id="jacket">
+      <div class="container">
+        <div class="jacket">
+          <div class="img-div">
+            <img src="./assets/img/model_woman_1.png" alt="" />
+          </div>
+          <div class="content">
+            <h5>#NEW SUMMER COLLECTION 2019</h5>
+            <h1>JACKET</h1>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="slider">
+        <h1 class="collec">COLLECTIONS</h1>
+      <div class="container">
+        <!-- Set up your HTML -->
+        <div class="owl-carousel">
+          <div class="card">
+            <div class="img-div">
+              <img src="./assets/img/product_1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>The Shoe</h3>
+              <h5>Summer collection</h5>
+              <div class="price">
+                <h3>9$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-div">
+              <img src="./assets/img/product_2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>The Shoe</h3>
+              <h5>Summer collection</h5>
+              <div class="price">
+                <h3>9$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-div">
+              <img src="./assets/img/product_3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>The Shoe</h3>
+              <h5>Summer collection</h5>
+              <div class="price">
+                <h3>9$</h3>
+                <h3 class="old-price">20.00$</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coat">
+      <div class="container">
+        <div class="coat">
+          <div class="img-div">
+            <img src="./assets/img/model_5.png" alt="" />
+          </div>
+
+          <div class="content">
+            <h5>#NEW SUMMER COLLECTION 2019</h5>
+            <h1>NEW DENIM COAT</h1>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <nav class="about">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              quae reiciendis distinctio voluptates sed dolorum excepturi iure
+              eaque, aut unde.
+            </p>
+            <h2>Subscribe</h2>
+            <div class="send">
+              <input type="text" placeholder="Email" />
+              <button>SEND</button>
+            </div>
+          </nav>
+          <nav >
+            <h2>Quick Links</h2>
+            <div class="ul">
+              <ul>
+                <li>Sell online</li>
+                <li>Features</li>
+                <li>Shopping cart</li>
+                <li>Store builder</li>
+              </ul>
+              <ul>
+                <li>Sell online</li>
+                <li>Features</li>
+                <li>Shopping cart</li>
+                <li>Store builder</li>
+              </ul>
+              <ul>
+                <li>Sell online</li>
+                <li>Features</li>
+                <li>Shopping cart</li>
+                <li>Store builder</li>
+              </ul>
+            </div>
+          </nav>
+          <nav class="contact">
+            <h2>Contact Info</h2>
+            <ul>
+              <li>
+                <i class="fa-solid fa-paper-plane"></i>
+                <h4>
+                  203 Fake St. Mountain View, San Francisco, California, USA
+                </h4>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <h4>+2 392 3929 210</h4>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <h4>emailaddress@domain.com</h4>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
